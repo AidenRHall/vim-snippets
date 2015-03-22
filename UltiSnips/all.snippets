@@ -135,3 +135,49 @@ vim`!v ':set '. (&expandtab ? printf('et sw=%i ts=%i', &sw, &ts) : printf('noet 
 endsnippet
 
 # vim:ft=snippets:
+
+
+########################################################################
+#                    custom aiden stuff goes here                      #
+########################################################################
+snippet { "Curly braces"
+{
+	$1
+}
+endsnippet
+
+snippet {} "Curly braces same line" i
+{$1}
+endsnippet
+
+snippet ( "Parens" i
+(
+	$1
+)
+endsnippet
+
+snippet () "Parens same line" i
+($1)
+endsnippet
+
+snippet [ "Brackets" i
+[
+	$1
+]
+endsnippet
+
+snippet [] "Brackets same line" i
+[$1]
+endsnippet
+
+snippet <> "Less than greater than"
+<$1>
+endsnippet
+
+snippet " "Double quotes" i
+"$1"
+endsnippet
+
+snippet ' "Double quotes" i
+'$1'
+endsnippet
