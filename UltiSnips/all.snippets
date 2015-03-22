@@ -146,12 +146,28 @@ snippet { "Curly braces"
 }
 endsnippet
 
-snippet ( "Parens"
+snippet {} "Curly braces same line"
+{$1}
+endsnippet
+
+snippet ( "Parens same line"
 ($1)
 endsnippet
 
-snippet [ "Brackets"
+snippet () "Parens"
+(
+	$1
+)
+endsnippet
+
+snippet [ "Brackets same line"
 [$1]
+endsnippet
+
+snippet [] "Brackets"
+[
+	$1
+]
 endsnippet
 
 snippet < ""
